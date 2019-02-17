@@ -14,7 +14,8 @@ public class User {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
+        StringBuilder builder;
+        builder = new StringBuilder();
         builder.append("User [name=");
         builder.append(name);
         builder.append("]");

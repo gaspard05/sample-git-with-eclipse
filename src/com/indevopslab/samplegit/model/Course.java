@@ -15,5 +15,8 @@ public class Course {
     public void setName(String name) {
         this.name = name;
     }
-    
+    @Override
+    public String toString() {
+        return String.format("Course [id=%s, name=%s]", id, name);
+    }   
 }

@@ -3,6 +3,7 @@ package com.indevopslab.samplegit.model;
 public class User {
     
     private String name;
+    private int age;
 
     public String getName() {
         return name;
@@ -12,14 +13,18 @@ public class User {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder builder;
-        builder = new StringBuilder();
-        builder.append("User [name=");
-        builder.append(name);
-        builder.append("]");
-        return builder.toString();
+    public int getAge() {
+        return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("User [name=%s, age=%s]", name, age);
+    }    
+    
+    
 }
